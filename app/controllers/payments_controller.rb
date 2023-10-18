@@ -1,10 +1,8 @@
 class PaymentsController < ApplicationController
-
   def index
     @payments = Payment.all
     @categories = Category.all
   end
-
 
   def show
     @category_id = params[:id]
@@ -14,7 +12,6 @@ class PaymentsController < ApplicationController
     @payments = Payment.where(id: payment_categories.pluck(:payment_id)).order(created_at: :desc)
     @sum = @payments.sum(:amount)
   end
-
 
   def new
     @payment = Payment.new
@@ -40,6 +37,7 @@ class PaymentsController < ApplicationController
 
   def destroy
     return unless @payment.destroy
+
     redirect_to user_payments_url
   end
 

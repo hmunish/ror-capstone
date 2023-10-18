@@ -19,6 +19,10 @@ section {
   border: 3px solid #707070;
 }
 
+p {
+  color: #9a9b9b;
+}
+
 input::placeholder {
   color: #7c7c7c;
 }
@@ -39,7 +43,7 @@ input::placeholder {
 
 .landing-cont h1 {
   font-style: italic;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 25px;
   padding-top: 15rem;
@@ -152,7 +156,6 @@ input::placeholder {
   text-align: center;
   color: white;
   text-decoration: none;
-
   border: 1px solid white;
   padding: 1rem 3rem;
 }
@@ -185,9 +188,6 @@ input::placeholder {
   padding-top: 1.5rem;
   font-size: 20px;
   color: white;
-}
-
-.nav-payment h1 {
 }
 
 .fa-less-than {
@@ -241,10 +241,6 @@ input::placeholder {
 .top h3 {
   font-size: 23px;
   text-transform: capitalize;
-}
-
-p {
-  color: #9a9b9b;
 }
 
 .top h3,
@@ -320,7 +316,6 @@ h4 {
   color: white;
   background-color: #5fb523;
   text-decoration: none;
-
   border: 1px solid white;
   padding: 1rem 4rem;
 }

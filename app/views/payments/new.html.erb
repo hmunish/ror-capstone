@@ -14,7 +14,7 @@
     <%= f.number_field :amount, class: "form-control", placeholder: "Amount", required: true %>
   </div>
   <div class="categories-form-cont">
-  <%= f.label :category_ids, "Categories", class: "cat-label" %>
+  <%= f.label :category_ids, "Categories", class: "all-categories-label" %>
   <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
     <div class="form-check">
       <%= cb.check_box(class: "form-check-input") %>

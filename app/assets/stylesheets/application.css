@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
 
-*,
-html {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Proxima Nova", sans-serif;
 }
 
 body {
-  background-color: #f1f3f2;
+  background-color: rgb(218, 218, 213);
   overflow-x: hidden;
+  max-width: 400px;
+  min-height: 750px;
+  margin: auto;
+}
+
+section {
+  border: 3px solid #707070;
+}
+
+input::placeholder {
+  color: #7c7c7c;
 }
 
 .landing-page {
@@ -27,10 +38,10 @@ body {
 }
 
 .landing-cont h1 {
-  font-family: 'Raleway', sans-serif;
   font-style: italic;
+  font-family: "Font Awesome 5 Free";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 25px;
   padding-top: 15rem;
 }
 
@@ -44,52 +55,54 @@ body {
   gap: 1rem;
 }
 
-.sign-in-btn {
+.sign-in-button {
   width: 90%;
   height: 3rem;
-  font-size: 20px;
+  font-size: 10px;
   background-color: #3778c2;
   border-style: none;
   color: white;
 }
 
-.sign-in-btn a {
+.sign-in-button a {
   color: white;
   text-decoration: none;
-  font-family: 'Proxima Nova', sans-serif;
 }
 
 .sign-up-btn {
-  font-size: 20px;
+  font-size: 10px;
   border-style: none;
 }
 
 .sign-up-btn a {
   color: #434b54;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
 }
 
 .header-cat {
   width: 100%;
-  height: 7rem;
+  height: 75px;
+  display: flex;
+  justify-content: center;
   background-color: #3778c2;
 }
 
 .category-nav {
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-inline: 1rem;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-size: 20px;
   color: white;
-  font-family: 'Raleway', sans-serif;
 }
 
 .category-nav h1 {
-  font-family: 'Raleway', sans-serif;
+  font-weight: 1000;
+  font-size: 25px;
 }
 
 .category-container {
@@ -128,8 +141,10 @@ body {
 
 .name-category,
 .total-category {
-  font-size: 23px;
   flex-grow: 1;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #9a9b9b;
 }
 
 .add-category {
@@ -137,7 +152,7 @@ body {
   text-align: center;
   color: white;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+
   border: 1px solid white;
   padding: 1rem 3rem;
 }
@@ -154,7 +169,10 @@ body {
 
 .header-payment {
   width: 100%;
-  height: 7.5rem;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #3778c2;
 }
 
@@ -170,28 +188,33 @@ body {
 }
 
 .nav-payment h1 {
-  font-family: 'Proxima Nova', sans-serif;
 }
 
 .fa-less-than {
   color: white;
 }
 
-.recent-cont {
+.recent-content {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-top: 1rem;
-  margin-left: 8rem;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 25px;
 }
 
-.recent-cont .p1 {
+.recent-content > p {
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.recent-content .p1 {
   color: rgb(242, 235, 235);
 }
 
-.recent-cont .p2 {
-  font-size: 20px;
+.recent-content .p2 {
   color: rgb(218, 213, 213);
 }
 
@@ -206,7 +229,7 @@ body {
 .top {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 5rem;
   background-color: white;
@@ -217,8 +240,17 @@ body {
 .top p,
 .top h3 {
   font-size: 23px;
-  font-family: 'Proxima Nova', sans-serif;
-  color: #434b54;
+  text-transform: capitalize;
+}
+
+p {
+  color: #9a9b9b;
+}
+
+.top h3,
+h4 {
+  font-size: 25px;
+  color: #9a9b9b;
 }
 
 .payments-section {
@@ -232,9 +264,8 @@ body {
 .payment-div {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 10px;
-  font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
 
@@ -258,13 +289,11 @@ body {
 }
 
 .pay-name {
-  margin-left: -3rem;
-  flex-grow: 1;
+  text-transform: capitalize;
 }
 
 .pay-date {
-  font-family: 'Raleway', sans-serif;
-  padding-left: 6rem;
+  padding-left: 5rem;
 }
 
 .date-div {
@@ -291,7 +320,7 @@ body {
   color: white;
   background-color: #5fb523;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+
   border: 1px solid white;
   padding: 1rem 4rem;
 }
@@ -305,7 +334,6 @@ body {
   align-items: center;
   justify-content: space-between;
   color: white;
-  font-family: 'Raleway', sans-serif;
 }
 
 .fa-arrow-left {
@@ -320,13 +348,12 @@ body {
 }
 
 .field-login input {
-  height: 3rem;
+  height: 5rem;
   outline-style: none;
-  font-size: 20px;
   margin-left: 10px;
-  border-color: #f1f3f2;
+  border-color: #d7dfdd;
   border-style: none;
-  border-bottom: 1px solid #808284;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .login-header a {
@@ -335,7 +362,8 @@ body {
 }
 
 .login-link p {
-  font-size: 22px;
+  font-size: 15px;
+  color: #fff;
 }
 
 .shared-links-login {
@@ -349,13 +377,12 @@ body {
 
 .passw-login a {
   font-size: 22px;
-  color: #434b54;
+  color: #9a9b9b;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
 }
 
 .email-login {
-  border-bottom: 1px solid #808284;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .field-remember-me {
@@ -368,17 +395,15 @@ body {
 
 .actions-login {
   position: relative;
-  top: -11rem;
+  top: -15rem;
   left: 19rem;
-  background-color: #3778c2;
 }
 
 .login-submit {
   background-color: #3778c2;
   border-style: none;
   color: white;
-  font-size: 17px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
 }
 
 .field-signup {
@@ -389,12 +414,11 @@ body {
 
 .field-signup input {
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   outline-style: none;
-  font-size: 20px;
-  border-color: #f1f3f2;
+  border-color: #d7dfdd;
   border-style: none;
-  border-bottom: 1px solid #808284;
+  border-bottom: 1px solid #e5e1e1;
   background-color: white;
 }
 
@@ -404,7 +428,7 @@ body {
 
 .actions-signup {
   position: relative;
-  bottom: 22rem;
+  bottom: 30rem;
   left: 19.5rem;
 }
 
@@ -412,8 +436,7 @@ body {
   background-color: #3778c2;
   border-style: none;
   color: white;
-  font-size: 17px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
 }
 
 .signup-top {
@@ -421,14 +444,16 @@ body {
   align-items: center;
   width: 100%;
   height: 5rem;
-  margin-left: 10px;
   background-color: white;
   font-size: 22px;
   gap: 20px;
-  color: #434b54;
-  font-family: 'Raleway', sans-serif;
-  border-bottom: 1px solid #808284;
+  border-bottom: 1px solid #e5e5e5;
   margin-top: 20px;
+  padding-left: 25px;
+}
+
+.signup-top p {
+  font-size: 35px;
 }
 
 .fa-user {
@@ -452,11 +477,11 @@ body {
 }
 
 .label-category input {
-  height: 3rem;
+  height: 5rem;
   outline-style: none;
   margin-left: 10px;
   border-style: none;
-  border-bottom: 1px solid #808284;
+  border-bottom: 1px solid #e5e5e5;
   font-size: 18px;
 }
 
@@ -477,7 +502,6 @@ body {
   background-color: #5fb523;
   border: 1px solid white;
   color: white;
-  font-family: 'Raleway', sans-serif;
 }
 
 .label-payment {
@@ -488,11 +512,11 @@ body {
 }
 
 .label-payment input {
-  height: 3rem;
+  height: 5rem;
   outline-style: none;
   margin-left: 10px;
   border-style: none;
-  border-bottom: 1px solid #808284;
+  border-bottom: 1px solid #e5e5e5;
   font-size: 18px;
 }
 
@@ -513,16 +537,19 @@ body {
   background-color: #5fb523;
   border: 1px solid white;
   color: white;
-  font-family: 'Raleway', sans-serif;
 }
 
 .categories-form-cont {
   padding: 10px;
   background-color: #3778c2;
   color: #222325;
-  font-family: 'Raleway', sans-serif;
 }
 
-.cat-label {
+.all-categories-label {
   font-size: 22px;
+  color: #fff;
+}
+
+.form-check-label {
+  color: #fff;
 }

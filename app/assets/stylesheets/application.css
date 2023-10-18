@@ -1,15 +1,528 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f3f2;
+  overflow-x: hidden;
+}
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.landing-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-cont h1 {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 15rem;
+}
+
+.links-btns {
+  width: 100%;
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sign-in-btn {
+  width: 90%;
+  height: 3rem;
+  font-size: 20px;
+  background-color: #3778c2;
+  border-style: none;
+  color: white;
+}
+
+.sign-in-btn a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.sign-up-btn {
+  font-size: 20px;
+  border-style: none;
+}
+
+.sign-up-btn a {
+  color: #434b54;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-cat {
+  width: 100%;
+  height: 7rem;
+  background-color: #3778c2;
+}
+
+.category-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 1rem;
+  padding-top: 1.5rem;
+  font-size: 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.category-nav h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.category-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-article {
+  width: 90%;
+}
+
+.article-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 6rem;
+  background-color: white;
+  margin-block: 10px;
+  padding: 0 10px;
+}
+
+.category-article a {
+  text-decoration: none;
+}
+
+.icon img {
+  width: 60%;
+  height: 100px;
+  padding: 0;
+}
+
+.name-category,
+.total-category {
+  font-size: 23px;
+  flex-grow: 1;
+}
+
+.add-category {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid white;
+  padding: 1rem 3rem;
+}
+
+.add-category-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7rem;
+  background-color: #5fb523;
+  margin-top: 5rem;
+}
+
+.header-payment {
+  width: 100%;
+  height: 7.5rem;
+  background-color: #3778c2;
+}
+
+.nav-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 1rem;
+  padding-top: 1.5rem;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-payment h1 {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.fa-less-than {
+  color: white;
+}
+
+.recent-cont {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+
+.recent-cont .p1 {
+  font-size: 20px;
+  color: rgb(242, 235, 235);
+}
+
+.recent-cont .p2 {
+  font-size: 20px;
+  color: rgb(218, 213, 213);
+}
+
+.dot {
+  color: white;
+  position: relative;
+  left: 11rem;
+  top: -20px;
+  font-size: 2em;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background-color: white;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.top p,
+.top h3 {
+  font-size: 23px;
+  font-family: 'Proxima Nova', sans-serif;
+  color: #434b54;
+}
+
+.payments-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.payment-article {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 6rem;
+  background-color: white;
+  margin-block: 10px;
+  padding-top: 10px;
+}
+
+.category-payment-icon {
+  width: 60%;
+  height: 50px;
+  margin-left: -4rem;
+}
+
+.pay-name {
+  margin-left: -3rem;
+  flex-grow: 1;
+}
+
+.pay-date {
+  font-family: 'Raleway', sans-serif;
+  padding-left: 6rem;
+}
+
+.date-div {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(30, 33%, 99%);
+  display: flex;
+  align-items: center;
+}
+
+.add-transaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  background-color: #5fb523;
+  margin-top: 6rem;
+}
+
+.add-payment {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  background-color: #5fb523;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid white;
+  padding: 1rem 4rem;
+}
+
+.login-header {
+  width: 100%;
+  height: 6rem;
+  background-color: #3778c2;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.fa-arrow-left {
+  font-size: 22px;
+}
+
+.field-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.field-login input {
+  height: 3rem;
+  outline-style: none;
+  font-size: 20px;
+  margin-left: 10px;
+  border-color: #f1f3f2;
+  border-style: none;
+  border-bottom: 1px solid #808284;
+}
+
+.login-header a {
+  text-decoration: none;
+  color: white;
+}
+
+.login-link p {
+  font-size: 22px;
+}
+
+.shared-links-login {
+  display: none;
+}
+
+.passw-login {
+  position: relative;
+  left: 7rem;
+}
+
+.passw-login a {
+  font-size: 22px;
+  color: #434b54;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.email-login {
+  border-bottom: 1px solid #808284;
+}
+
+.field-remember-me {
+  display: none;
+}
+
+.p-hide {
+  color: #3778c2;
+}
+
+.actions-login {
+  position: relative;
+  top: -11rem;
+  left: 19rem;
+  background-color: #3778c2;
+}
+
+.login-submit {
+  background-color: #3778c2;
+  border-style: none;
+  color: white;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.field-signup {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.field-signup input {
+  width: 100%;
+  height: 3rem;
+  outline-style: none;
+  font-size: 20px;
+  border-color: #f1f3f2;
+  border-style: none;
+  border-bottom: 1px solid #808284;
+  background-color: white;
+}
+
+.input-cont {
+  margin-left: 10px;
+}
+
+.actions-signup {
+  position: relative;
+  bottom: 22rem;
+  left: 19.5rem;
+}
+
+.signup-form-btn {
+  background-color: #3778c2;
+  border-style: none;
+  color: white;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.signup-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  margin-left: 10px;
+  background-color: white;
+  font-size: 22px;
+  gap: 20px;
+  color: #434b54;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 1px solid #808284;
+  margin-top: 20px;
+}
+
+.fa-user {
+  font-size: 28px;
+  border: 1px solid #434b54;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  background-color: #434b54;
+}
+
+.cont-top {
+  background-color: white;
+}
+
+.label-category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+.label-category input {
+  height: 3rem;
+  outline-style: none;
+  margin-left: 10px;
+  border-style: none;
+  border-bottom: 1px solid #808284;
+  font-size: 18px;
+}
+
+.category-submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #5fb523;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-category-btn {
+  width: 300px;
+  font-size: 22px;
+  height: 4rem;
+  background-color: #5fb523;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.label-payment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+.label-payment input {
+  height: 3rem;
+  outline-style: none;
+  margin-left: 10px;
+  border-style: none;
+  border-bottom: 1px solid #808284;
+  font-size: 18px;
+}
+
+.payment-submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #5fb523;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-payment-btn {
+  width: 80%;
+  font-size: 22px;
+  height: 4rem;
+  background-color: #5fb523;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.categories-form-cont {
+  padding: 10px;
+  background-color: #3778c2;
+  color: #222325;
+  font-family: 'Raleway', sans-serif;
+}
+
+.cat-label {
+  font-size: 22px;
+}

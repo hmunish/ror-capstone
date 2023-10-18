@@ -1,0 +1,27 @@
+<header class="header-cat">
+<nav class="category-nav">
+<i class="fas fa-bars"></i>
+<h1>Categories</h1>
+<i class="fas fa-search"></i>
+</nav>
+</header>
+<section class="category-container">
+<% if @categories.empty? %>
+<p>There are no categories for the budget</p>
+<% else %>
+<% @categories.each do |category| %>
+    <article class="category-article">
+   
+    <%= link_to user_payment_path(current_user.id, category.id) do %>
+      <div class="article-inner">
+    <div class="name-category"><%= category.name %></div>
+    <div class="total-category"><span class="total-span">$<%= @category_sums[category.id] %></span></div>
+    </div>
+    <% end %>
+</article>
+<% end %>
+    <% end %>
+    <div class="add-category-btn">
+    <%= link_to "Add a new Category", new_user_category_path, class: "add-category" %>
+  </div>
+</section>

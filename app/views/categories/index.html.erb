@@ -13,6 +13,7 @@
     <article class="category-article">
     <%= link_to user_payment_path(current_user.id, category.id) do %>
       <div class="article-inner">
+    <div class="icon"><%=image_tag(category.icon, :alt => "category icon.", :class => "category-icon") %></div>
     <div class="name-category"><%= category.name %></div>
     <div class="total-category"><span class="total-span">$<%= @category_sums[category.id] %></span></div>
     </div>

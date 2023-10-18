@@ -22,6 +22,7 @@
 <% @payments.each do |payment| %>
     <article class="payment-article">
     <div class="payment-div">
+    <%=image_tag(@category.icon, :alt => "category icon.", :class => "category-payment-icon") %>
 <p class="pay-name"><%= payment.name %></p>
 <h4>$<%= payment.amount %></h4>
 </div>

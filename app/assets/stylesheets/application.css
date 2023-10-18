@@ -73,12 +73,12 @@ input::placeholder {
   text-decoration: none;
 }
 
-.sign-up-btn {
+.sign-up-button {
   font-size: 10px;
   border-style: none;
 }
 
-.sign-up-btn a {
+.sign-up-button a {
   color: #434b54;
   text-decoration: none;
 }

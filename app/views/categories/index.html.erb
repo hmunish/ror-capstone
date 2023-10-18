@@ -7,11 +7,10 @@
 </header>
 <section class="category-container">
 <% if @categories.empty? %>
-<p>There are no categories for the budget</p>
+<p>Please add categories to see here, currently there are no categories for the budget</p>
 <% else %>
 <% @categories.each do |category| %>
     <article class="category-article">
-   
     <%= link_to user_payment_path(current_user.id, category.id) do %>
       <div class="article-inner">
     <div class="name-category"><%= category.name %></div>

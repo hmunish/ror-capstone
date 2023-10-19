@@ -1,0 +1,38 @@
+<header class="header-payment">
+<nav class="nav-payment">
+<%= link_to user_categories_path(current_user) do %>
+<i class="fas fa-less-than"></i>
+<% end %>
+<h1>Payments</h1>
+<i class="fas fa-search"></i>
+</nav>
+<div class="recent-content">
+<p class="p1">Most recent <span>.</span></p>
+<p class="p2">Most Ancient <span>&nbsp;</span></p>
+</div>
+</header>
+<section class="payments-section">
+<div class="top">
+<p><%= @category_name %></p>
+<h3>$<%= @sum %></h3>
+</div>
+<% if @payments.empty? %>
+<p>There are no payments for this category</p>
+<% else %>
+<% @payments.each do |payment| %>
+    <article class="payment-article">
+    <div class="payment-div">
+    <%=image_tag(@category.icon, :alt => "category icon.", :class => "category-payment-icon") %>
+<p class="pay-name"><%= payment.name %></p>
+<h4>$<%= payment.amount %></h4>
+</div>
+<div class="date-div">
+<p class="pay-date"><%= payment.created_at.strftime('%Y-%m-%d') %></p>
+</div>
+    </article>
+    <% end %>
+    <% end %>
+    <div class="add-transaction">
+    <%= button_to "Add a payment" , new_user_payment_path, method: :get, class: "add-payment" %>
+    </div>
+</section>

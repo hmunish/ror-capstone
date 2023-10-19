@@ -337,12 +337,11 @@ h4 {
 .field-login {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   background-color: white;
 }
 
 .field-login input {
-  height: 5rem;
+  height: 3rem;
   outline-style: none;
   margin-left: 10px;
   border-color: #d7dfdd;
@@ -389,7 +388,7 @@ h4 {
 
 .actions-login {
   position: relative;
-  top: -15rem;
+  top: -13.5rem;
   left: 22rem;
 }
 
@@ -408,7 +407,7 @@ h4 {
 
 .field-signup input {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   outline-style: none;
   border-color: #d7dfdd;
   border-style: none;
@@ -422,7 +421,7 @@ h4 {
 
 .actions-signup {
   position: relative;
-  bottom: 30rem;
+  bottom: 28.5rem;
   left: 22.5rem;
 }
 
@@ -442,7 +441,6 @@ h4 {
   font-size: 22px;
   gap: 20px;
   border-bottom: 1px solid #e5e5e5;
-  margin-top: 20px;
   padding-left: 25px;
 }
 
